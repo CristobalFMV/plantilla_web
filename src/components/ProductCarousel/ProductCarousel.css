@@ -108,6 +108,16 @@
 @media (hover: none) {
   .image-carousel-controls .carousel-button { opacity: .8; }
 }
+@media (max-width: 760px) {
+  .image-carousel-controls .carousel-button {
+    width: 20%;
+    color: transparent;
+    opacity: 0;
+    touch-action: manipulation;
+  }
+  .image-carousel-controls .carousel-button::before { display: none; }
+  .image-carousel-controls .carousel-button span { visibility: hidden; }
+}
 @media (prefers-reduced-motion: reduce) {
   .image-carousel-art,
   .image-carousel-controls .carousel-button { animation: none; transition: none; }
