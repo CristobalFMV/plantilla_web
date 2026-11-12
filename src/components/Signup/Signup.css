@@ -1,0 +1,10 @@
+/* Presentación centrada del formulario de novedades y de sus mensajes de estado. */
+.cta { text-align: center; }
+.cta .container { max-width: 760px; }
+.cta h2 { margin-bottom: var(--space-2); font-size: clamp(2rem, 4vw, 3rem); }
+.cta p { max-width: 48ch; margin-right: auto; margin-left: auto; }
+.signup { display: flex; flex-wrap: wrap; justify-content: center; gap: .7rem; margin-top: var(--space-3); }
+.signup input { flex: 1 1 250px; min-height: 50px; padding: .75rem 1.1rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: var(--surface); }
+.signup input:focus { border-color: var(--primary); outline: 2px solid color-mix(in srgb, var(--primary) 25%, transparent); }
+.form-msg { min-height: 1.6em; margin: var(--space-2) 0 0; color: var(--sage); font-size: var(--text-sm); }
+.form-msg[data-status="error"] { color: var(--primary); }

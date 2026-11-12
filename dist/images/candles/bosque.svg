@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <!-- Ilustración de la vela Bosque usada por la diapositiva homónima del carrusel. -->
+  <defs>
+    <!-- Degradados y filtro compartidos por el fondo, el frasco, la etiqueta y su sombra. -->
+    <linearGradient id="background" x1="140" y1="30" x2="1460" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D332D"/>
+      <stop offset=".52" stop-color="#44584A"/>
+      <stop offset="1" stop-color="#B18B64"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="956" y1="286" x2="1200" y2="658" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9DFC8" stop-opacity=".96"/>
+      <stop offset=".45" stop-color="#CFC5AC"/>
+      <stop offset=".82" stop-color="#A59A80"/>
+      <stop offset="1" stop-color="#E8DDC6"/>
+    </linearGradient>
+    <linearGradient id="label" x1="992" y1="407" x2="1163" y2="572" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEE4CE"/>
+      <stop offset="1" stop-color="#C6B89C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 300 -300 0 1080 365)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ECCB8B" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#ECCB8B" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="835" y="255" width="480" height="500" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+  <!-- Fondo, halo cálido, aros decorativos y sombra que sitúan la vela en la escena. -->
+  <path fill="url(#background)" d="M0 0h1600v760H0z"/>
+  <path fill="url(#glow)" d="M0 0h1600v760H0z"/>
+  <circle cx="1090" cy="390" r="270" stroke="#E9DAB5" stroke-opacity=".18"/>
+  <circle cx="1090" cy="390" r="330" stroke="#E9DAB5" stroke-opacity=".12"/>
+  <ellipse cx="1080" cy="667" fill="#121D19" opacity=".48" rx="195" ry="33" filter="url(#shadow)"/>
+  <!-- Ramas y hojas de bosque que identifican visualmente esta fragancia. -->
+  <path d="M1380 760c-48-191-39-329 34-455m-23 193c-53-61-102-88-155-90m171 15c59-52 112-73 169-65m-175 174c-63-41-122-53-187-38m195-107c67-28 122-33 185-15" stroke="#A8B596" stroke-linecap="round" stroke-width="14" opacity=".65"/>
+  <path d="M1234 509c-55-39-90-88-101-149 53 24 96 65 130 124m50-67c5-67 30-120 78-160 7 59-4 115-34 168m-190 165c-63-27-110-67-143-125 58 13 109 43 154 92" fill="#7E957B" opacity=".72"/>
+  <!-- Llama, mecha, recipiente y etiqueta rotulada con el nombre de la colección. -->
+  <path d="M1080 293c-22-31-24-64 0-98 25 34 24 66 0 98Z" fill="#F4BE68"/>
+  <path d="M1080 290c-12-19-12-38 0-56 13 19 13 38 0 56Z" fill="#FFF2C5"/>
+  <path d="M1075 289h10v28h-10z" fill="#49382B"/>
+  <rect x="954" y="310" width="252" height="348" rx="43" fill="url(#jar)" stroke="#F7F1E5" stroke-opacity=".62" stroke-width="3"/>
+  <path d="M970 332c5 209 5 249 0 290" stroke="#fff" stroke-opacity=".33" stroke-width="11" stroke-linecap="round"/>
+  <path d="M975 416h210v150H975z" fill="url(#label)"/>
+  <path d="M994 438h172m-172 104h172" stroke="#8E7558" stroke-opacity=".45"/>
+  <text x="1080" y="485" fill="#514437" font-family="Georgia,serif" font-size="29" letter-spacing="6" text-anchor="middle">LUMÉRE</text>
+  <text x="1080" y="519" fill="#695A47" font-family="Arial,sans-serif" font-size="12" letter-spacing="4" text-anchor="middle">BOSQUE · CEDRO</text>
+  <path d="M0 680c158-58 268-48 402 0s261 54 400 0" stroke="#C1A77A" stroke-opacity=".27" stroke-width="2"/>
+</svg>

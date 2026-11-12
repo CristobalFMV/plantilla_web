@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <!-- Ilustración de la vela Jardín que utiliza el carrusel como imagen de producto. -->
+  <defs>
+    <!-- Degradados verdes y marfil, además del filtro para la sombra proyectada. -->
+    <linearGradient id="background" x1="190" y1="0" x2="1440" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#354C3C"/>
+      <stop offset=".52" stop-color="#73836B"/>
+      <stop offset="1" stop-color="#D3C49C"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="954" y1="304" x2="1205" y2="658" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8D6B8"/>
+      <stop offset=".5" stop-color="#A6A889"/>
+      <stop offset=".87" stop-color="#7E826B"/>
+      <stop offset="1" stop-color="#C7C4A5"/>
+    </linearGradient>
+    <linearGradient id="label" x1="994" y1="416" x2="1164" y2="565" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2EBD8"/>
+      <stop offset="1" stop-color="#D8D0B7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 328 -345 0 1090 380)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3E0A7" stop-opacity=".44"/>
+      <stop offset="1" stop-color="#F3E0A7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="835" y="260" width="480" height="500" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+  <!-- Fondo, halo de luz, aros de composición y sombra detrás del recipiente. -->
+  <path fill="url(#background)" d="M0 0h1600v760H0z"/>
+  <path fill="url(#glow)" d="M0 0h1600v760H0z"/>
+  <circle cx="1090" cy="390" r="272" stroke="#EDF0D9" stroke-opacity=".24"/>
+  <circle cx="1090" cy="390" r="334" stroke="#EDF0D9" stroke-opacity=".14"/>
+  <ellipse cx="1080" cy="666" fill="#28392D" opacity=".4" rx="198" ry="34" filter="url(#shadow)"/>
+  <!-- Follaje y flores claras que representan el carácter floral de la fragancia. -->
+  <path d="M1370 760c-30-190 8-337 128-451m-91 292c-65-43-113-103-142-180m128 114c-2-82 29-151 94-207m-172 128c-71-25-125-71-163-138m206 161c58-46 120-66 188-57" stroke="#B8C6A0" stroke-linecap="round" stroke-width="13" opacity=".75"/>
+  <path d="M1296 546c-57-40-91-94-101-162 55 27 99 72 132 136m-37-64c9-72 41-128 98-169 3 62-14 120-52 171m88 45c44-59 101-96 171-109-29 63-75 112-140 146m-291-14c-63-30-107-79-132-146 61 19 111 56 149 113" fill="#9EAF8D" opacity=".8"/>
+  <circle cx="1331" cy="464" r="27" fill="#F4EFE0"/>
+  <circle cx="1442" cy="550" r="19" fill="#E6D9B6"/>
+  <circle cx="1268" cy="641" r="15" fill="#F4EFE0"/>
+  <!-- Llama y envase rotulado; las formas superpuestas producen luces y reflejos del vidrio. -->
+  <path d="M1080 293c-22-31-24-64 0-98 25 34 24 66 0 98Z" fill="#F4BE68"/>
+  <path d="M1080 290c-12-19-12-38 0-56 13 19 13 38 0 56Z" fill="#FFF2C5"/>
+  <path d="M1075 289h10v28h-10z" fill="#49382B"/>
+  <rect x="954" y="310" width="252" height="348" rx="43" fill="url(#jar)" stroke="#F2F0D8" stroke-opacity=".62" stroke-width="3"/>
+  <path d="M970 332c5 209 5 249 0 290" stroke="#fff" stroke-opacity=".31" stroke-width="11" stroke-linecap="round"/>
+  <path d="M975 416h210v150H975z" fill="url(#label)"/>
+  <path d="M994 438h172m-172 104h172" stroke="#788066" stroke-opacity=".55"/>
+  <text x="1080" y="485" fill="#4B5240" font-family="Georgia,serif" font-size="29" letter-spacing="6" text-anchor="middle">LUMÉRE</text>
+  <text x="1080" y="519" fill="#687157" font-family="Arial,sans-serif" font-size="12" letter-spacing="4" text-anchor="middle">JARDÍN · BERGAMOTA</text>
+  <path d="M0 689c166-58 299-55 432-2s260 51 388-1" stroke="#E5E5C5" stroke-opacity=".34" stroke-width="2"/>
+</svg>

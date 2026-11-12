@@ -1,0 +1,47 @@
+:root {
+  /* Tokens compartidos: colores, tipografía, espacios y medidas que consumen los componentes. */
+  color-scheme: light;
+  --bg: #f7f2e9;
+  --surface: #fffdf8;
+  --surface-warm: #eee3d2;
+  --ink: #33251d;
+  --ink-soft: #76675b;
+  --line: #dfd1bd;
+  --primary: #8b4e32;
+  --primary-hover: #713c26;
+  --primary-ink: #fffaf3;
+  --accent: #c58a53;
+  --sage: #66745b;
+  --font: "Playfair Display", Georgia, serif;
+  --serif: "Playfair Display", Georgia, serif;
+  --text-sm: .875rem;
+  --text-lg: 1.2rem;
+  --text-xl: clamp(1.8rem, 3.5vw, 2.6rem);
+  --text-hero: clamp(3rem, 7vw, 5.7rem);
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: clamp(4rem, 9vw, 7rem);
+  --radius-sm: 12px;
+  --radius-lg: 28px;
+  --shadow: 0 24px 60px -34px rgb(65 42 27 / 38%);
+  --max-width: 1160px;
+}
+
+/* El tema oscuro reemplaza los mismos tokens para conservar los estilos de componentes. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #211a16;
+  --surface: #2e241e;
+  --surface-warm: #3a2d24;
+  --ink: #f6eee2;
+  --ink-soft: #c7b6a4;
+  --line: #4a3a2e;
+  --primary: #c7865e;
+  --primary-hover: #d99a72;
+  --primary-ink: #211a16;
+  --accent: #e2b078;
+  --sage: #a7ad88;
+  --shadow: 0 24px 60px -34px rgb(0 0 0 / 75%);
+}

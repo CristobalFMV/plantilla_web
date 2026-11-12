@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <!-- Ilustración de Atardecer enlazada a la diapositiva de cítricos y rosa. -->
+  <defs>
+    <!-- Degradados rosados del fondo, el recipiente y su etiqueta, y sombra suavizada. -->
+    <linearGradient id="background" x1="210" y1="5" x2="1440" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#693D3A"/>
+      <stop offset=".46" stop-color="#BA7860"/>
+      <stop offset="1" stop-color="#E5BD8D"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="954" y1="304" x2="1204" y2="658" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8C4B0"/>
+      <stop offset=".48" stop-color="#C58D79"/>
+      <stop offset=".86" stop-color="#A96D61"/>
+      <stop offset="1" stop-color="#DCAC93"/>
+    </linearGradient>
+    <linearGradient id="label" x1="994" y1="416" x2="1164" y2="565" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7EBDD"/>
+      <stop offset="1" stop-color="#E6CFB9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 335 -355 0 1090 380)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD69A" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#FFD69A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="835" y="260" width="480" height="500" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+  <!-- Fondo al atardecer, luz ambiental, aros decorativos y sombra del frasco. -->
+  <path fill="url(#background)" d="M0 0h1600v760H0z"/>
+  <path fill="url(#glow)" d="M0 0h1600v760H0z"/>
+  <circle cx="1090" cy="390" r="272" stroke="#FFE7CC" stroke-opacity=".24"/>
+  <circle cx="1090" cy="390" r="334" stroke="#FFE7CC" stroke-opacity=".14"/>
+  <ellipse cx="1080" cy="666" fill="#57332F" opacity=".4" rx="198" ry="34" filter="url(#shadow)"/>
+  <!-- Hojas, pétalos y rodajas cítricas que distinguen esta escena de las otras fragancias. -->
+  <path d="M1353 760c-15-168 39-306 171-409m-131 244c-62-49-100-111-113-187m188 135c11-70 49-126 115-166m-248 145c-60-20-106-60-138-119m223 100c58-22 115-20 174 7" stroke="#D7A18A" stroke-linecap="round" stroke-width="13" opacity=".78"/>
+  <path d="M1320 507c-51-45-75-100-70-165 46 32 77 80 91 143m107-55c26-59 67-99 124-119-10 58-38 106-80 145m-246 55c-48-46-72-101-72-166 45 34 76 81 91 143" fill="#D7A18A" opacity=".8"/>
+  <circle cx="1326" cy="475" r="25" fill="#EDC36E"/>
+  <circle cx="1380" cy="475" r="25" fill="#E79458"/>
+  <circle cx="1353" cy="519" r="25" fill="#F0B966"/>
+  <circle cx="1447" cy="595" r="15" fill="#F4E9D9"/>
+  <!-- Llama, mecha, frasco y etiqueta con la marca y el nombre del aroma. -->
+  <path d="M1080 293c-22-31-24-64 0-98 25 34 24 66 0 98Z" fill="#F4BE68"/>
+  <path d="M1080 290c-12-19-12-38 0-56 13 19 13 38 0 56Z" fill="#FFF2C5"/>
+  <path d="M1075 289h10v28h-10z" fill="#49382B"/>
+  <rect x="954" y="310" width="252" height="348" rx="43" fill="url(#jar)" stroke="#FFE7D8" stroke-opacity=".64" stroke-width="3"/>
+  <path d="M970 332c5 209 5 249 0 290" stroke="#fff" stroke-opacity=".3" stroke-width="11" stroke-linecap="round"/>
+  <path d="M975 416h210v150H975z" fill="url(#label)"/>
+  <path d="M994 438h172m-172 104h172" stroke="#9D6C5B" stroke-opacity=".5"/>
+  <text x="1080" y="485" fill="#69483D" font-family="Georgia,serif" font-size="29" letter-spacing="6" text-anchor="middle">LUMÉRE</text>
+  <text x="1080" y="519" fill="#8A5E4F" font-family="Arial,sans-serif" font-size="12" letter-spacing="4" text-anchor="middle">ATARDECER · ROSA</text>
+  <path d="M0 689c167-61 296-55 430-2s261 53 390-1" stroke="#FFE7C7" stroke-opacity=".36" stroke-width="2"/>
+</svg>

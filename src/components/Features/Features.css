@@ -1,0 +1,23 @@
+/* Tarjetas que presentan los atributos cargados por Features.tsx. */
+.collection { background: var(--surface); }
+.section-head { max-width: 650px; margin-bottom: var(--space-4); }
+.section-head h2, .quote h2, .cta h2 { margin-bottom: var(--space-2); font-size: var(--text-xl); }
+.section-head p { max-width: 48ch; margin-bottom: 0; }
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+.feature {
+  min-height: 235px;
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--bg);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.feature:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: var(--shadow); }
+.feature-mark { display: grid; width: 48px; height: 48px; margin-bottom: var(--space-3); place-items: center; border-radius: 50%; color: var(--primary); background: var(--surface-warm); font-family: var(--serif); font-size: 1.4rem; }
+.feature h3 { margin: 0 0 .65rem; font-family: var(--serif); font-size: 1.35rem; font-weight: 600; }
+.feature p { margin: 0; font-size: .96rem; }
+
+@media (max-width: 760px) {
+  .features { grid-template-columns: 1fr; }
+  .feature { min-height: 0; }
+}

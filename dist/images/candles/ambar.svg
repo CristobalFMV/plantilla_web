@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <!-- Ilustración de la vela Ámbar referenciada en el carrusel de aromas. -->
+  <defs>
+    <!-- Degradados cálidos del fondo, la cera y la etiqueta, más el desenfoque de la sombra. -->
+    <linearGradient id="background" x1="260" y1="0" x2="1460" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A3825"/>
+      <stop offset=".48" stop-color="#A9683B"/>
+      <stop offset="1" stop-color="#E0B779"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="950" y1="300" x2="1200" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCA875"/>
+      <stop offset=".48" stop-color="#A96A42"/>
+      <stop offset=".86" stop-color="#79432E"/>
+      <stop offset="1" stop-color="#C58D5C"/>
+    </linearGradient>
+    <linearGradient id="label" x1="994" y1="419" x2="1164" y2="567" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5E6CD"/>
+      <stop offset="1" stop-color="#D9C1A1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 340 -370 0 1090 380)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD58D" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#FFD58D" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="835" y="260" width="480" height="500" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+  <!-- Fondo y resplandor ámbar con aros y sombra para dar profundidad a la escena. -->
+  <path fill="url(#background)" d="M0 0h1600v760H0z"/>
+  <path fill="url(#glow)" d="M0 0h1600v760H0z"/>
+  <circle cx="1090" cy="390" r="275" stroke="#FCE6BE" stroke-opacity=".25"/>
+  <circle cx="1090" cy="390" r="337" stroke="#FCE6BE" stroke-opacity=".15"/>
+  <ellipse cx="1080" cy="666" fill="#512D21" opacity=".44" rx="198" ry="34" filter="url(#shadow)"/>
+  <!-- Hojas y frutos en tonos dorados que acompañan la fragancia dulce y especiada. -->
+  <path d="M1335 722c17-102 75-184 176-241m-128 171c-69-30-117-79-144-145m214 98c9-71 42-129 99-175m-190 114c-56-56-83-121-78-198m34 119c-67-19-127-12-180 22m181 62c66-19 125-13 180 19" stroke="#D7A36A" stroke-linecap="round" stroke-width="13" opacity=".8"/>
+  <path d="M1377 513c-52-43-79-97-78-162 48 30 82 76 101 138m56-54c20-61 56-105 111-131-6 59-28 110-66 152m-224 67c-45-49-68-104-66-167 42 36 70 84 84 144" fill="#E4B774" opacity=".78"/>
+  <circle cx="1274" cy="646" r="35" fill="#C68B52" opacity=".9"/>
+  <circle cx="1274" cy="646" r="22" fill="#E3B66F"/>
+  <!-- Llama, mecha, frasco y etiqueta con el nombre y la nota principal del aroma. -->
+  <path d="M1080 293c-22-31-24-64 0-98 25 34 24 66 0 98Z" fill="#F4BE68"/>
+  <path d="M1080 290c-12-19-12-38 0-56 13 19 13 38 0 56Z" fill="#FFF2C5"/>
+  <path d="M1075 289h10v28h-10z" fill="#49382B"/>
+  <rect x="954" y="310" width="252" height="348" rx="43" fill="url(#jar)" stroke="#F6D6AA" stroke-opacity=".62" stroke-width="3"/>
+  <path d="M970 332c5 209 5 249 0 290" stroke="#FFE4C3" stroke-opacity=".28" stroke-width="11" stroke-linecap="round"/>
+  <path d="M975 416h210v150H975z" fill="url(#label)"/>
+  <path d="M994 438h172m-172 104h172" stroke="#8E6345" stroke-opacity=".52"/>
+  <text x="1080" y="485" fill="#604630" font-family="Georgia,serif" font-size="29" letter-spacing="6" text-anchor="middle">LUMÉRE</text>
+  <text x="1080" y="519" fill="#795B3D" font-family="Arial,sans-serif" font-size="12" letter-spacing="4" text-anchor="middle">ÁMBAR · VAINILLA</text>
+  <path d="M0 690c170-64 292-46 432 0s256 48 385-2" stroke="#F3D29F" stroke-opacity=".36" stroke-width="2"/>
+</svg>

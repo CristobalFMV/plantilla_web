@@ -1,0 +1,81 @@
+/* Escena del carrusel: imagen a pantalla ancha, texto superpuesto y navegación accesible. */
+.products-carousel { padding-block: 0 var(--space-5); }
+.image-carousel {
+  position: relative;
+  min-height: clamp(330px, 48vw, 560px);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  isolation: isolate;
+  background: var(--surface-warm);
+}
+.image-carousel-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: carousel-fade-in .55s ease both;
+}
+.image-carousel-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgb(28 20 15 / 75%) 0%, rgb(28 20 15 / 45%) 40%, transparent 78%), linear-gradient(0deg, rgb(28 20 15 / 34%), transparent 25%);
+  pointer-events: none;
+}
+.image-carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: clamp(1.5rem, 7vw, 5.5rem);
+  z-index: 2;
+  max-width: min(580px, 62%);
+  color: #fffaf3;
+  transform: translateY(-50%);
+}
+.image-carousel-caption p { color: inherit; }
+.image-carousel-category { margin: 0 0 .75rem; font-size: .78rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.image-carousel-caption h2 { margin: 0 0 .7rem; font-family: var(--serif); font-size: clamp(2.6rem, 7vw, 5.5rem); font-weight: 500; letter-spacing: -.04em; line-height: 1; }
+.image-carousel-message { margin: 0; font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.65rem); }
+.image-carousel-controls { position: absolute; top: 50%; right: 1.2rem; left: 1.2rem; z-index: 3; display: flex; justify-content: space-between; pointer-events: none; transform: translateY(-50%); }
+.image-carousel-controls .carousel-button {
+  width: 46px;
+  height: 46px;
+  border-color: rgb(255 250 243 / 45%);
+  color: #fffaf3;
+  background: rgb(35 25 18 / 25%);
+  font-size: 1.6rem;
+  pointer-events: auto;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.image-carousel-controls .carousel-button:hover { border-color: #fffaf3; background: rgb(35 25 18 / 65%); }
+.image-carousel-footer { position: absolute; right: 1.5rem; bottom: 1.3rem; left: 1.5rem; z-index: 3; display: flex; align-items: center; gap: 1rem; color: #fffaf3; }
+.carousel-indicators { display: flex; align-items: center; gap: .55rem; }
+.carousel-indicator { width: 9px; height: 9px; padding: 0; border: 1px solid #fffaf3; border-radius: 999px; background: transparent; cursor: pointer; transition: width .2s ease, background-color .2s ease; }
+.carousel-indicator.is-active { width: 27px; background: #fffaf3; }
+.carousel-autoplay { padding: .3rem .1rem; border: 0; color: inherit; background: transparent; font-size: .78rem; cursor: pointer; }
+.carousel-position { margin-left: auto; font-size: .78rem; font-variant-numeric: tabular-nums; letter-spacing: .08em; }
+/* Entrada suave de la imagen al seleccionar otra diapositiva. */
+@keyframes carousel-fade-in { from { opacity: .35; transform: scale(1.015); } to { opacity: 1; transform: scale(1); } }
+
+/* Reorganiza el texto y los controles en pantallas estrechas para conservar su legibilidad. */
+@media (max-width: 760px) {
+  .image-carousel { min-height: 420px; }
+  .image-carousel-art { object-position: 58% center; }
+  .image-carousel-shade { background: linear-gradient(0deg, rgb(28 20 15 / 72%), rgb(28 20 15 / 5%) 78%); }
+  .image-carousel-caption { top: auto; right: 1.5rem; bottom: 5rem; left: 1.5rem; max-width: 100%; transform: none; }
+  .image-carousel-caption h2 { font-size: clamp(2.7rem, 12vw, 4.2rem); }
+  .image-carousel-controls { right: .8rem; left: .8rem; }
+  .image-carousel-footer { right: 1rem; bottom: 1rem; left: 1rem; }
+}
+/* Afinaciones para móviles compactos y usuarios que reducen animaciones. */
+@media (max-width: 420px) {
+  .image-carousel { min-height: 370px; border-radius: 20px; }
+  .image-carousel-caption { bottom: 4.8rem; }
+  .image-carousel-category { font-size: .68rem; }
+  .image-carousel-message { max-width: 26ch; font-size: 1.08rem; }
+  .image-carousel-footer { gap: .7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .image-carousel-art { animation: none; }
+}
