@@ -256,9 +256,6 @@ export default function Story() {
             {error && <p className="review-feedback is-error" role="alert">{error}</p>}
             {message && <p className="review-feedback" role="status">{message}</p>}
             <button className="btn review-submit" type="submit">Publicar reseña</button>
-            <small className="review-storage-note">
-              Las reseñas que envíes se guardan en este navegador y no se publican en un servidor.
-            </small>
           </form>
         </div>
       </div>
