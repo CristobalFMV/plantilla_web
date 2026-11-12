@@ -45,7 +45,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
   --primary-hover: #d99a72;
   --primary-ink: #211a16;
   --accent: #e2b078;
-  --sage: #a7ad88;
+  --sage: #dc143c;
 }
 body {
   margin: 0;
