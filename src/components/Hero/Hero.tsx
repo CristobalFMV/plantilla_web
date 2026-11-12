@@ -15,8 +15,8 @@ export default function Hero() {
             cotidiano tu ritual favorito.
           </p>
           <div className="hero-actions">
-            <a className="btn" href="#coleccion">
-              Descubre nuestra esencia
+            <a className="btn" href="#productos">
+              Encuentra tu aroma
             </a>
             <a className="btn btn-ghost" href="#historia">
               Conoce Lumére
@@ -26,21 +26,11 @@ export default function Hero() {
             <span aria-hidden="true">✦</span> Vertidas a mano en pequeños lotes
           </p>
         </div>
-        {/* La vela se ilustra con elementos HTML y CSS, sin depender de una imagen externa. */}
-        <div
-          className="candle-scene"
-          role="img"
-          aria-label="Ilustración de una vela Lumére encendida en un recipiente color arena"
-        >
-          <div className="candle">
-            <span className="wick">
-              <span className="flame" />
-            </span>
-            <div className="candle-label">
-              <img src="/images/images/png/Lumerenegrotexto.png" alt="" />
-            </div>
-          </div>
-          <span className="scene-caption">Un respiro, en casa.</span>
+        <div className="hero-photo">
+          <img
+            src="/images/images/velas3.jpeg"
+            alt="Velas Lumére en recipientes de vidrio junto a tapas de madera"
+          />
         </div>
       </div>
     </section>

@@ -36,11 +36,13 @@
 @media (max-width: 760px) {
   .reviews-content { grid-template-columns: 1fr; }
   .review-card { min-height: 0; grid-template-columns: minmax(120px, .7fr) 1.3fr; }
-  .review-photos, .review-photos img { min-height: 320px; }
+  .review-photos { min-height: 320px; }
+  .review-photos img { height: 320px; min-height: 0; max-height: 320px; object-fit: contain; }
   .review-copy { padding: 1.5rem; }
 }
 @media (max-width: 480px) {
   .review-card { grid-template-columns: 1fr; }
-  .review-photos, .review-photos img { min-height: 260px; max-height: 340px; }
+  .review-photos { min-height: 0; }
+  .review-photos img { height: clamp(220px, 72vw, 340px); max-height: none; }
   .review-copy { padding: 1.4rem; }
 }

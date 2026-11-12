@@ -47,7 +47,7 @@
 .catalog-product-description { min-height: 2.8em; color: var(--ink-soft); font-size: .87rem; line-height: 1.5; }
 .catalog-product-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
 .catalog-product-tags span { padding: .2rem .55rem; border-radius: 999px; color: var(--neutral-text); background: var(--surface-warm); font-size: .7rem; font-weight: 700; }
-.catalog-detail-link { margin-top: .2rem; color: var(--primary); font-size: .87rem; font-weight: 700; }
+.catalog-add-button { width: 100%; margin-top: .2rem; }
 .catalog-empty { padding: 3rem 1rem; border: 1px dashed var(--line); border-radius: var(--radius-lg); text-align: center; }
 .catalog-empty > span { color: var(--accent); font-size: 1.8rem; }
 .catalog-empty h3 { margin: .75rem 0 .35rem; font-family: var(--serif); }

@@ -15,7 +15,7 @@ type ProductCatalogProps = {
   onAddToCart: (candle: Candle, quantity: number) => void;
 };
 
-// Busca y filtra la fuente de datos y abre la ficha del producto seleccionado.
+// Busca y filtra productos y permite agregarlos directamente al carrito.
 export default function ProductCatalog({ onAddToCart }: ProductCatalogProps) {
   // Estos valores controlados mantienen sincronizados los campos y el resultado visible.
   const [query, setQuery] = useState("");
@@ -110,7 +110,6 @@ export default function ProductCatalog({ onAddToCart }: ProductCatalogProps) {
           {filteredCandles.length === 1 ? "producto" : "productos"}
         </p>
         {filteredCandles.length ? (
-          // Cada tarjeta abre una ficha; el alta real del producto se delega al componente padre.
           <div className="catalog-grid">
             {filteredCandles.map((candle) => (
               <article className="catalog-card" key={candle.id}>
@@ -140,8 +139,14 @@ export default function ProductCatalog({ onAddToCart }: ProductCatalogProps) {
                       <span>{candle.fragranceFamily}</span>
                       <span>{candle.category}</span>
                     </span>
-                    <span className="catalog-detail-link">Ver detalles <span aria-hidden="true">↗</span></span>
                   </span>
+                </button>
+                <button
+                  className="btn catalog-add-button"
+                  type="button"
+                  onClick={() => onAddToCart(candle, 1)}
+                >
+                  Añadir al carrito
                 </button>
               </article>
             ))}
@@ -154,7 +159,6 @@ export default function ProductCatalog({ onAddToCart }: ProductCatalogProps) {
           </div>
         )}
       </div>
-
       <ProductModal
         candle={selectedCandle}
         onClose={() => setSelectedCandle(null)}

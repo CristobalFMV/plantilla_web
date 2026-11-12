@@ -61,7 +61,7 @@ section { padding-block: var(--space-5); scroll-margin-top: 4.5rem; }
 }
 .cart-toast-action { display: flex; min-width: 0; align-items: center; gap: .7rem; padding: .4rem; border: 0; border-radius: 8px; color: inherit; background: transparent; text-align: left; cursor: pointer; }
 .cart-toast-action:hover { background: var(--bg); }
-.cart-toast-check { display: grid; width: 30px; height: 30px; flex: none; place-items: center; border-radius: 50%; color: var(--primary-ink); background: var(--sage); font-weight: 800; }
+.cart-toast-check { display: grid; width: 30px; height: 30px; flex: none; place-items: center; border-radius: 50%; color: #fffaf3; background: #3f7d4a; font-weight: 800; }
 .cart-toast-copy { display: grid; gap: .1rem; color: var(--ink-soft); font-size: .85rem; }
 .cart-toast-copy strong { color: var(--primary); font-size: .8rem; }
 .cart-toast-dismiss { display: grid; width: 36px; height: 36px; flex: none; place-items: center; margin-left: auto; border: 0; border-radius: 50%; color: var(--ink-soft); background: transparent; font-size: 1.2rem; cursor: pointer; }
