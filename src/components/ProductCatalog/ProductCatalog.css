@@ -1,6 +1,7 @@
 /* Filtros, contador y cuadrícula que presentan los resultados calculados por ProductCatalog. */
 .catalog { background: var(--surface); }
 .catalog .section-head { margin-bottom: var(--space-3); }
+.catalog .eyebrow { color: var(--neutral-text); }
 .catalog-filters {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +46,7 @@
 .catalog-product-heading strong:last-child { flex: none; font-family: var(--font); font-size: .9rem; }
 .catalog-product-description { min-height: 2.8em; color: var(--ink-soft); font-size: .87rem; line-height: 1.5; }
 .catalog-product-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
-.catalog-product-tags span { padding: .2rem .55rem; border-radius: 999px; color: #66745b; background: var(--surface-warm); font-size: .7rem; font-weight: 700; }
+.catalog-product-tags span { padding: .2rem .55rem; border-radius: 999px; color: var(--neutral-text); background: var(--surface-warm); font-size: .7rem; font-weight: 700; }
 .catalog-detail-link { margin-top: .2rem; color: var(--primary); font-size: .87rem; font-weight: 700; }
 .catalog-empty { padding: 3rem 1rem; border: 1px dashed var(--line); border-radius: var(--radius-lg); text-align: center; }
 .catalog-empty > span { color: var(--accent); font-size: 1.8rem; }

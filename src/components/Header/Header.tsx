@@ -18,6 +18,14 @@ export default function Header({
     <header className="site-header">
       <div className="container nav">
         <a className="logo" href="#" aria-label="Lumére, inicio">
+          <span className="logo-mark" aria-hidden="true">
+            <img
+              src={isDark
+                ? "/images/images/png/Lumereblanco.png"
+                : "/images/images/png/Lumerenegro.png"}
+              alt=""
+            />
+          </span>
           LUMÉRE
         </a>
         <nav className="nav-links" aria-label="Principal">

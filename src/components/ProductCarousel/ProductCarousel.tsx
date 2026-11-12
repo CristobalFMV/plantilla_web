@@ -130,7 +130,7 @@ export default function ProductCarousel() {
               aria-label="Imagen anterior"
               onClick={() => showSlide(activeIndex - 1)}
             >
-              ‹
+              <span aria-hidden="true">‹</span>
             </button>
             <button
               className="carousel-button"
@@ -138,7 +138,7 @@ export default function ProductCarousel() {
               aria-label="Imagen siguiente"
               onClick={() => showSlide(activeIndex + 1)}
             >
-              ›
+              <span aria-hidden="true">›</span>
             </button>
           </div>
           <div className="image-carousel-footer">

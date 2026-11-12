@@ -20,7 +20,7 @@
 .product-dialog-art .product-candle { width: 170px; height: 220px; }
 .product-dialog-art .product-candle strong { font-size: 1rem; }
 .product-dialog-info { align-self: center; padding: 3rem 2rem 2rem; }
-.product-dialog-info .eyebrow { margin-bottom: .6rem; }
+.product-dialog-info .eyebrow { margin-bottom: .6rem; color: var(--neutral-text); }
 .product-dialog-info h2 { margin: 0 0 .8rem; font-size: clamp(2rem, 5vw, 2.8rem); }
 .product-dialog-description { margin-bottom: .8rem; }
 .product-dialog-fragrance { font-size: .9rem; }

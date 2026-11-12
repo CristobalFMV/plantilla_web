@@ -37,8 +37,7 @@ export default function Hero() {
               <span className="flame" />
             </span>
             <div className="candle-label">
-              <strong>LUMÉRE</strong>
-              <small>luz de hogar</small>
+              <img src="/images/images/png/Lumerenegrotexto.png" alt="" />
             </div>
           </div>
           <span className="scene-caption">Un respiro, en casa.</span>
