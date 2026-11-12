@@ -64,7 +64,6 @@ export default function App() {
 
   return (
     <>
-      <div className="candlelight" aria-hidden="true" />
       <Header
         isDark={isDark}
         onToggleTheme={toggleTheme}
