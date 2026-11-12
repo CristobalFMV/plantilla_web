@@ -74,11 +74,16 @@
   .hero-grid { grid-template-columns: 1fr; gap: var(--space-4); }
   .hero h1 { max-width: 11ch; }
   .candle-scene { min-height: 350px; border-radius: 42% 42% 26px 26px; }
+  .candle { width: clamp(150px, 44vw, 190px); height: 220px; padding-bottom: 58px; }
+  .candle-label { height: 100px; }
 }
 @media (max-width: 420px) {
   .hero-actions { align-items: stretch; flex-direction: column; }
   .hero-actions .btn { width: 100%; }
   .candle-scene { min-height: 315px; }
+  .candle { width: clamp(140px, 42vw, 165px); height: 190px; padding-bottom: 48px; }
+  .candle-label { height: 90px; }
+  .scene-caption { right: 1rem; bottom: 1rem; font-size: .9rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .flame { animation: none; }
