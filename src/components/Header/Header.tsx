@@ -18,7 +18,7 @@ export default function Header({
     <header className="site-header">
       <div className="container nav">
         <a className="logo" href="#" aria-label="Lumére, inicio">
-          Lumére
+          LUMÉRE
         </a>
         <nav className="nav-links" aria-label="Principal">
           {/* Los enlaces apuntan a secciones de la página y el botón abre el carrito controlado por App. */}
