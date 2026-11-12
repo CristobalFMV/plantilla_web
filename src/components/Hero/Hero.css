@@ -39,11 +39,7 @@
   .hero { padding-top: 4rem; }
   .hero-grid { grid-template-columns: 1fr; gap: var(--space-4); }
   .hero h1 { max-width: 11ch; }
-  .hero-photo { width: min(100%, 560px); height: clamp(280px, 72vw, 400px); margin-inline: auto; }
-  .hero-photo img {
-    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 35%);
-    mask-image: linear-gradient(180deg, transparent 0%, #000 35%);
-  }
+  .hero-photo { display: none; }
 }
 @media (max-width: 420px) {
   .hero-actions { align-items: stretch; flex-direction: column; }
