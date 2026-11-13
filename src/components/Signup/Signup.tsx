@@ -25,8 +25,8 @@ export default function Signup() {
   return (
     <section className="cta" id="empezar">
       <div className="container">
-        <p className="eyebrow">Un momento solo para ti</p>
         <h2>Que la calma encuentre su lugar.</h2>
+        <p className="eyebrow">Un momento solo para ti</p>
         <p>
           Déjanos tu correo y recibe novedades, aromas de temporada y un
           detalle de bienvenida.

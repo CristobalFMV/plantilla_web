@@ -3,6 +3,7 @@
 .section-head { max-width: 650px; margin-bottom: var(--space-4); }
 .section-head h2, .quote h2, .cta h2 { margin-bottom: var(--space-2); font-size: var(--text-xl); }
 .section-head p { max-width: 48ch; margin-bottom: 0; }
+.section-head .section-descriptor { color: var(--primary); font-size: .84rem; font-weight: 700; letter-spacing: .03em; }
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
 .feature {
   min-height: 235px;

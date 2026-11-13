@@ -25,8 +25,8 @@ export default function Features() {
     <section className="collection" id="coleccion">
       <div className="container">
         <div className="section-head">
-          <p className="eyebrow">Pequeños detalles, otra forma de sentir</p>
           <h2>Una luz hecha para acompañarte.</h2>
+          <p className="section-descriptor">Pequeños detalles, otra forma de sentir</p>
           <p>
             Creamos cada vela con ingredientes de origen vegetal y fragancias
             que invitan a bajar el ritmo.

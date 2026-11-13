@@ -2,8 +2,8 @@
 .reviews { background: var(--surface-warm); }
 .reviews-heading { margin-bottom: var(--space-4); text-align: center; }
 .reviews-heading h2 { margin-bottom: .6rem; font-size: clamp(2.2rem, 5vw, 3.5rem); }
+.reviews-eyebrow { margin: 0 0 .35rem; color: var(--primary); font-size: .84rem; font-weight: 700; letter-spacing: .03em; text-transform: none; }
 .reviews-heading > p:last-child { margin-bottom: 0; }
-.reviews-eyebrow { margin-bottom: .5rem; color: var(--primary); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .reviews-content { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); align-items: start; gap: clamp(1.5rem, 4vw, 3.5rem); }
 .reviews-showcase { min-width: 0; }
 .review-card { display: grid; min-height: 390px; grid-template-columns: minmax(190px, .8fr) 1.2fr; overflow: hidden; border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow); }

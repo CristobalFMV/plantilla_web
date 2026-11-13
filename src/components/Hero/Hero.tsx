@@ -6,10 +6,10 @@ export default function Hero() {
     <section className="hero">
       <div className="container hero-grid">
         <div>
-          <p className="eyebrow">Velas artesanales · Hechas con calma</p>
           <h1>
             Enciende un momento <span>para ti.</span>
           </h1>
+          <p className="hero-descriptor">Velas artesanales · Hechas con calma</p>
           <p className="hero-copy">
             Cera vegetal, aromas honestos y una luz suave para hacer de lo
             cotidiano tu ritual favorito.
@@ -30,6 +30,9 @@ export default function Hero() {
           <img
             src="/images/images/velas3.jpeg"
             alt="Velas Lumére en recipientes de vidrio junto a tapas de madera"
+            width="1600"
+            height="1200"
+            fetchPriority="high"
           />
         </div>
       </div>

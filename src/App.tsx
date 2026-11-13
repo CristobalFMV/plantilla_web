@@ -73,8 +73,8 @@ export default function App() {
       <main>
         {/* Las secciones principales reciben únicamente las acciones o datos que necesitan. */}
         <Hero />
-        <ProductCarousel />
         <ProductCatalog onAddToCart={addToCart} />
+        <ProductCarousel />
         <Features />
         <Story />
         <Signup />

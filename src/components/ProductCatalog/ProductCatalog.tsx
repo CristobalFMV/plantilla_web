@@ -9,6 +9,12 @@ const categories = [...new Set(candles.map((candle) => candle.category))];
 const fragranceFamilies = [
   ...new Set(candles.map((candle) => candle.fragranceFamily)),
 ];
+const productImages: Record<string, string> = {
+  bosque: "/images/candles/bosque.svg",
+  ambar: "/images/candles/ambar.svg",
+  jardin: "/images/candles/jardin.svg",
+  atardecer: "/images/candles/atardecer.svg",
+};
 
 // El catálogo informa al componente padre cuando el usuario agrega un producto.
 type ProductCatalogProps = {
@@ -42,8 +48,8 @@ export default function ProductCatalog({ onAddToCart }: ProductCatalogProps) {
     <section className="catalog" id="productos" aria-labelledby="catalog-title">
       <div className="container">
         <div className="section-head">
-          <p className="eyebrow">La colección Lumére</p>
           <h2 id="catalog-title">Encuentra tu próxima vela.</h2>
+          <p className="section-descriptor">La colección Lumére</p>
           <p>
             Busca por nombre o combina los filtros para encontrar el aroma
             indicado para tu espacio.
@@ -111,45 +117,55 @@ export default function ProductCatalog({ onAddToCart }: ProductCatalogProps) {
         </p>
         {filteredCandles.length ? (
           <div className="catalog-grid">
-            {filteredCandles.map((candle) => (
-              <article className="catalog-card" key={candle.id}>
-                <button
-                  type="button"
-                  className="catalog-product-button"
-                  onClick={() => setSelectedCandle(candle)}
-                  aria-label={`Ver detalles de ${candle.name}`}
-                >
-                  <span className="product-art" aria-hidden="true">
-                    <span className={`product-candle ${candle.variant}`}>
-                      <span>
-                        <strong>LUMÉRE</strong>
-                        <small>{candle.name}</small>
+            {filteredCandles.map((candle) => {
+              const productImage = productImages[candle.id];
+              return (
+                <article className="catalog-card" key={candle.id}>
+                  <button
+                    type="button"
+                    className="catalog-product-button"
+                    onClick={() => setSelectedCandle(candle)}
+                    aria-label={`Ver detalles de ${candle.name}`}
+                  >
+                    <span className={`product-art${productImage ? " has-photo" : ""}`} aria-hidden="true">
+                      {productImage ? (
+                        <img className="product-photo" src={productImage} alt="" loading="lazy" />
+                      ) : (
+                        <span className={`product-candle ${candle.variant}`}>
+                          <span>
+                            <strong>LUMÉRE</strong>
+                            <small>{candle.name}</small>
+                          </span>
+                        </span>
+                      )}
+                    </span>
+                    <span className="catalog-product-info">
+                      <span className="catalog-product-heading">
+                        <strong>{candle.name}</strong>
+                        <strong>{formatCurrency(candle.price)}</strong>
+                      </span>
+                      <span className="catalog-product-description">
+                        {candle.fragrance}
+                      </span>
+                      <span className="catalog-product-specs">
+                        {candle.size} · {candle.burnTime}
+                      </span>
+                      <span className="catalog-product-tags">
+                        <span>{candle.fragranceFamily}</span>
+                        <span>{candle.category}</span>
                       </span>
                     </span>
-                  </span>
-                  <span className="catalog-product-info">
-                    <span className="catalog-product-heading">
-                      <strong>{candle.name}</strong>
-                      <strong>{formatCurrency(candle.price)}</strong>
-                    </span>
-                    <span className="catalog-product-description">
-                      {candle.fragrance}
-                    </span>
-                    <span className="catalog-product-tags">
-                      <span>{candle.fragranceFamily}</span>
-                      <span>{candle.category}</span>
-                    </span>
-                  </span>
-                </button>
-                <button
-                  className="btn catalog-add-button"
-                  type="button"
-                  onClick={() => onAddToCart(candle, 1)}
-                >
-                  Añadir al carrito
-                </button>
-              </article>
-            ))}
+                  </button>
+                  <button
+                    className="btn catalog-add-button"
+                    type="button"
+                    onClick={() => onAddToCart(candle, 1)}
+                  >
+                    Añadir al carrito
+                  </button>
+                </article>
+              );
+            })}
           </div>
         ) : (
           <div className="catalog-empty">

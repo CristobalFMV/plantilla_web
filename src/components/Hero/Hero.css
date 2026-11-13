@@ -1,5 +1,5 @@
 /* Portada de dos columnas con llamado a la acción e ilustración decorativa de vela. */
-.hero { position: relative; overflow: hidden; padding: clamp(4rem, 8vw, 7rem) 0 var(--space-5); }
+.hero { position: relative; overflow: hidden; padding: clamp(3.5rem, 7vw, 6rem) 0 var(--space-5); }
 .hero { background: var(--bg); }
 .hero::before {
   position: absolute;
@@ -12,10 +12,10 @@
   content: "";
   pointer-events: none;
 }
-.hero-grid { position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(3rem, 8vw, 7rem); }
-.eyebrow { margin-bottom: var(--space-2); color: var(--neutral-text); font-size: .77rem; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
-.hero h1 { max-width: 10ch; margin: 0 0 var(--space-3); font-size: var(--text-hero); }
+.hero-grid { position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(3rem, 7vw, 6rem); }
+.hero h1 { max-width: 10ch; margin: 0 0 .75rem; font-size: var(--text-hero); }
 .hero h1 span { color: var(--primary); }
+.hero-descriptor { margin-bottom: var(--space-2); color: var(--primary); font-size: .86rem; font-weight: 700; letter-spacing: .03em; }
 .hero-copy { max-width: 49ch; margin-bottom: var(--space-3); font-size: var(--text-lg); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); }
 .hero-note { display: flex; align-items: center; gap: .55rem; margin-top: var(--space-3); color: var(--ink-soft); font-size: var(--text-sm); }
@@ -23,25 +23,30 @@
 .hero-photo {
   position: relative;
   min-width: 0;
-  height: clamp(350px, 38vw, 480px);
+  height: clamp(360px, 40vw, 500px);
   align-self: center;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--line) 75%, transparent);
+  border-radius: var(--radius-lg);
+  background: var(--surface-warm);
+  box-shadow: var(--shadow);
 }
 .hero-photo img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 38%);
-  mask-image: linear-gradient(90deg, transparent 0%, #000 38%);
+  object-position: center;
 }
 
 @media (max-width: 760px) {
-  .hero { padding-top: 4rem; }
-  .hero-grid { grid-template-columns: 1fr; gap: var(--space-4); }
+  .hero { padding: 3.5rem 0 var(--space-4); }
+  .hero-grid { grid-template-columns: 1fr; gap: var(--space-3); }
   .hero h1 { max-width: 11ch; }
-  .hero-photo { display: none; }
+  .hero-photo { height: clamp(230px, 68vw, 340px); }
 }
 @media (max-width: 420px) {
+  .hero h1 { font-size: clamp(2.65rem, 11vw, 3.2rem); }
   .hero-actions { align-items: stretch; flex-direction: column; }
   .hero-actions .btn { width: 100%; }
 }

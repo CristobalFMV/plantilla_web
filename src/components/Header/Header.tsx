@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Header.css";
 
 type HeaderProps = {
@@ -14,6 +15,8 @@ export default function Header({
   cartCount,
   onOpenCart,
 }: HeaderProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="site-header">
       <div className="container nav">
@@ -28,11 +31,36 @@ export default function Header({
           </span>
           LUMÉRE
         </a>
-        <nav className="nav-links" aria-label="Principal">
-          {/* Los enlaces apuntan a secciones de la página y el botón abre el carrito controlado por App. */}
-          <a href="#productos">Productos</a>
-          <a href="#coleccion">La esencia</a>
-          <a href="#historia">Opiniones</a>
+        <button
+          className="menu-toggle"
+          type="button"
+          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-navigation"
+          onClick={() => setIsMenuOpen((open) => !open)}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            {isMenuOpen ? (
+              <path d="m6 6 12 12M18 6 6 18" />
+            ) : (
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            )}
+          </svg>
+        </button>
+        <nav
+          className={`nav-links${isMenuOpen ? " is-open" : ""}`}
+          id="primary-navigation"
+          aria-label="Principal"
+        >
+          <a href="#productos" onClick={() => setIsMenuOpen(false)}>Productos</a>
+          <a href="#coleccion" onClick={() => setIsMenuOpen(false)}>La esencia</a>
+          <a href="#historia" onClick={() => setIsMenuOpen(false)}>Opiniones</a>
+          <a className="btn" href="#productos" onClick={() => setIsMenuOpen(false)}>
+            Ver la colección
+          </a>
+        </nav>
+        <div className="nav-tools">
+          {/* El botón abre el carrito controlado por App y el otro cambia el tema. */}
           <button
             className="cart-trigger"
             type="button"
@@ -43,9 +71,6 @@ export default function Header({
             <span className="cart-trigger-label">Carrito</span>
             <span className="cart-count" aria-live="polite">{cartCount}</span>
           </button>
-          <a className="btn" href="#empezar">
-            Encuentra tu aroma
-          </a>
           <button
             className="theme-toggle"
             type="button"
@@ -55,7 +80,7 @@ export default function Header({
           >
             ◐
           </button>
-        </nav>
+        </div>
       </div>
     </header>
   );

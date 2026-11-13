@@ -153,8 +153,8 @@ export default function Story() {
     <section className="story reviews" id="historia" aria-labelledby="reviews-title">
       <div className="container">
         <div className="reviews-heading">
-          <p className="reviews-eyebrow">Opiniones de nuestra comunidad</p>
           <h2 id="reviews-title">Historias que iluminan</h2>
+          <p className="reviews-eyebrow">Opiniones de nuestra comunidad</p>
           <p>Experiencias reales con las velas Lumére.</p>
         </div>
         <div className="reviews-content">
