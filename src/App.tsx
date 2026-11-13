@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import CartDrawer from "./components/Cart/CartDrawer";
+import Account from "./components/Account/Account";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -77,6 +78,7 @@ export default function App() {
         <ProductCarousel />
         <Features />
         <Story />
+        <Account />
         <Signup />
       </main>
       <Footer />

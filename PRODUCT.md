@@ -26,7 +26,7 @@ Las personas compran desde la web, donde pueden descubrir la colección, buscar 
 
 - La marca se llama Lumére y está pendiente de registro.
 - El catálogo, los precios y las descripciones actuales representan la oferta real de la marca.
-- El repositorio es todavía un prototipo de frontend: el catálogo es local, el carrito no persiste al recargar, las reseñas se guardan en el navegador, el formulario de novedades no envía datos a un servicio y el checkout no procesa pagos.
+- El repositorio es todavía un prototipo de frontend: el catálogo es local, el carrito no persiste al recargar, las reseñas se guardan en el navegador, el formulario de novedades no envía datos a un servicio, el módulo de registro/login es solo una vista previa que no crea cuentas ni guarda o transmite datos, y el checkout no procesa pagos.
 - Los límites legales y operativos de la tienda aún no están definidos. No presentar el prototipo como una tienda con pedidos, pagos o suscripciones operativos.
 
 ## Evidence on Hand

@@ -1,0 +1,29 @@
+.account-section { background: var(--surface-warm); }
+.account-layout { display: grid; grid-template-columns: minmax(0, .9fr) minmax(320px, 1.1fr); align-items: center; gap: clamp(2rem, 7vw, 6rem); }
+.account-intro { max-width: 46ch; }
+.account-intro h2 { margin-bottom: 1rem; font-size: clamp(2.2rem, 4.5vw, 3.5rem); }
+.account-intro > p { margin-bottom: 1rem; }
+.account-privacy { padding-top: .9rem; border-top: 1px solid var(--line); font-size: .9rem; }
+.account-privacy strong { color: var(--ink); }
+.account-form-panel { padding: clamp(1.25rem, 3.5vw, 2.25rem); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow); }
+.account-mode { display: grid; grid-template-columns: 1fr 1fr; gap: .3rem; padding: .3rem; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); }
+.account-mode button { min-height: 44px; padding: .5rem .75rem; border: 0; border-radius: 999px; color: var(--ink-soft); background: transparent; font-weight: 700; cursor: pointer; }
+.account-mode button.is-active { color: var(--primary-ink); background: var(--primary); }
+.account-form-panel h3 { margin: 1.5rem 0 1rem; font-family: var(--serif); font-size: 1.75rem; font-weight: 500; }
+.account-form { display: grid; gap: 1rem; }
+.account-field { display: grid; gap: .35rem; color: var(--ink); font-size: .9rem; font-weight: 700; }
+.account-field input { width: 100%; min-height: 48px; padding: .7rem .85rem; border: 1px solid var(--line); border-radius: var(--radius-sm); color: var(--ink); background: var(--bg); }
+.account-field small { color: var(--ink-soft); font-size: .8rem; font-weight: 400; }
+.account-consent { display: flex; align-items: flex-start; gap: .65rem; color: var(--ink-soft); font-size: .86rem; line-height: 1.5; cursor: pointer; }
+.account-consent input, .account-fragrances input { width: 18px; height: 18px; flex: none; margin: .15rem 0 0; accent-color: var(--primary); }
+.account-fragrances { display: flex; flex-wrap: wrap; gap: .4rem .8rem; margin: .85rem 0 0; padding: 0; border: 0; }
+.account-fragrances legend { width: 100%; margin-bottom: .45rem; color: var(--ink); font-size: .86rem; font-weight: 700; }
+.account-fragrances label { display: inline-flex; min-height: 36px; align-items: center; gap: .35rem; color: var(--ink-soft); font-size: .84rem; cursor: pointer; }
+.account-fragrances input { width: 16px; height: 16px; margin: 0; }
+.account-submit { width: 100%; }
+.account-feedback { min-height: 1.6em; margin: .85rem 0 0; color: var(--primary); font-size: .88rem; }
+
+@media (max-width: 760px) {
+  .account-layout { grid-template-columns: 1fr; gap: 1.75rem; }
+  .account-intro { max-width: 60ch; }
+}
