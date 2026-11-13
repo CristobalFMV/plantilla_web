@@ -1,0 +1,50 @@
+.login-page { display: grid; min-height: 100svh; grid-template-columns: minmax(0, 1fr) minmax(440px, .92fr); background: var(--surface-warm); }
+.login-visual { position: relative; min-height: 100svh; overflow: hidden; background: var(--surface-warm); }
+.login-visual::after { position: absolute; inset: 0; background: linear-gradient(0deg, rgb(33 26 22 / 78%), transparent 58%); content: ""; }
+.login-visual > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 58% center; }
+.login-visual-copy { position: absolute; right: clamp(2rem, 6vw, 6rem); bottom: clamp(2.5rem, 7vw, 6rem); left: clamp(2rem, 6vw, 6rem); z-index: 1; color: #fffaf3; }
+.login-visual-copy p { max-width: 12ch; margin-bottom: .65rem; color: inherit; font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 5rem); line-height: 1.04; text-wrap: balance; }
+.login-visual-copy span { font-size: .95rem; }
+.login-content { display: flex; min-height: 100svh; flex-direction: column; padding: 1.4rem clamp(1.5rem, 4vw, 4rem) 1.5rem; background: var(--surface-warm); }
+.login-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.login-logo { display: inline-flex; align-items: center; gap: .55rem; color: var(--ink); font-family: var(--serif); font-size: 1.5rem; font-weight: 600; letter-spacing: .04em; text-decoration: none; }
+.login-logo img { width: 34px; height: 34px; object-fit: contain; }
+.login-main { display: grid; flex: 1; place-items: center; padding-block: 2rem; }
+.login-form-panel { width: min(100%, 430px); }
+.login-form-panel h1 { margin-bottom: .7rem; font-size: clamp(2.3rem, 4vw, 3.25rem); }
+.login-intro { margin-bottom: 2rem; }
+.login-form { display: grid; gap: 1.2rem; }
+.login-field { display: grid; gap: .4rem; color: var(--ink); font-size: .9rem; font-weight: 700; }
+.login-field input { width: 100%; min-height: 50px; padding: .75rem .9rem; border: 1px solid var(--line); border-radius: var(--radius-sm); color: var(--ink); background: var(--surface); }
+.login-submit { width: 100%; margin-top: .2rem; }
+.login-feedback { min-height: 1.5em; margin: .9rem 0 0; color: var(--primary); font-size: .86rem; }
+.login-register { margin: .7rem 0 0; color: var(--ink-soft); font-size: .9rem; }
+.login-register a { color: var(--primary); font-weight: 700; text-underline-offset: .2em; }
+.login-notice { margin: 1.5rem 0 0; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .82rem; }
+.login-notice strong { color: var(--ink); }
+.login-back-link { align-self: flex-start; color: var(--ink-soft); font-size: .9rem; text-decoration: none; text-underline-offset: .2em; }
+.login-back-link:hover { color: var(--primary); text-decoration: underline; }
+
+@media (max-width: 760px) {
+  .login-page { grid-template-columns: 1fr; }
+  .login-visual { min-height: 0; height: clamp(240px, 34svh, 320px); overflow: hidden; background: var(--surface-warm); }
+  .login-visual::after { background: linear-gradient(90deg, rgb(55 32 23 / 74%), rgb(90 49 32 / 38%) 68%, rgb(90 49 32 / 12%)), linear-gradient(0deg, rgb(55 32 23 / 42%), transparent 76%); }
+  .login-visual > img { position: absolute; inset: 0; z-index: 0; height: 100%; object-position: 58% 55%; }
+  .login-visual-copy { right: 1rem; bottom: 1.5rem; left: 1rem; padding: 1rem 1.1rem; border-radius: 14px; background: rgb(55 32 23 / 92%); }
+  .login-visual-copy p { max-width: 12ch; margin-bottom: .45rem; font-size: clamp(2.1rem, 8.5vw, 3rem); }
+  .login-visual-copy span { font-size: .88rem; }
+  .login-content { position: relative; min-height: auto; margin-top: -1rem; padding: 1.5rem 1.25rem max(1.5rem, env(safe-area-inset-bottom)); border-radius: 24px 24px 0 0; box-shadow: 0 -12px 36px rgb(33 26 22 / 12%); }
+  .login-main { display: block; flex: initial; padding-block: 2rem 1.5rem; }
+  .login-form-panel { width: min(100%, 480px); margin-inline: auto; }
+  .login-form-panel h1 { font-size: clamp(2.1rem, 8vw, 2.8rem); }
+  .login-intro { margin-bottom: 1.5rem; }
+  .login-back-link { align-self: center; }
+}
+
+@media (max-width: 380px) {
+  .login-content { padding-inline: 1rem; }
+}
+
+@media (max-height: 700px) and (max-width: 760px) {
+  .login-visual { height: 220px; }
+}

@@ -6,9 +6,6 @@
 .account-privacy { padding-top: .9rem; border-top: 1px solid var(--line); font-size: .9rem; }
 .account-privacy strong { color: var(--ink); }
 .account-form-panel { padding: clamp(1.25rem, 3.5vw, 2.25rem); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--shadow); }
-.account-mode { display: grid; grid-template-columns: 1fr 1fr; gap: .3rem; padding: .3rem; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); }
-.account-mode button { min-height: 44px; padding: .5rem .75rem; border: 0; border-radius: 999px; color: var(--ink-soft); background: transparent; font-weight: 700; cursor: pointer; }
-.account-mode button.is-active { color: var(--primary-ink); background: var(--primary); }
 .account-form-panel h3 { margin: 1.5rem 0 1rem; font-family: var(--serif); font-size: 1.75rem; font-weight: 500; }
 .account-form { display: grid; gap: 1rem; }
 .account-field { display: grid; gap: .35rem; color: var(--ink); font-size: .9rem; font-weight: 700; }
@@ -22,6 +19,8 @@
 .account-fragrances input { width: 16px; height: 16px; margin: 0; }
 .account-submit { width: 100%; }
 .account-feedback { min-height: 1.6em; margin: .85rem 0 0; color: var(--primary); font-size: .88rem; }
+.account-login-link { margin: .75rem 0 0; color: var(--ink-soft); font-size: .9rem; text-align: center; }
+.account-login-link a { color: var(--primary); font-weight: 700; text-underline-offset: .2em; }
 
 @media (max-width: 760px) {
   .account-layout { grid-template-columns: 1fr; gap: 1.75rem; }

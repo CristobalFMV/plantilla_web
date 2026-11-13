@@ -55,7 +55,7 @@ export default function Header({
           <a href="#productos" onClick={() => setIsMenuOpen(false)}>Productos</a>
           <a href="#coleccion" onClick={() => setIsMenuOpen(false)}>La esencia</a>
           <a href="#historia" onClick={() => setIsMenuOpen(false)}>Opiniones</a>
-          <a href="#cuenta" onClick={() => setIsMenuOpen(false)}>Mi cuenta</a>
+          <a href="/login" onClick={() => setIsMenuOpen(false)}>Iniciar sesión</a>
           <a className="btn" href="#productos" onClick={() => setIsMenuOpen(false)}>
             Ver la colección
           </a>
